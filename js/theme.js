@@ -113,12 +113,13 @@ function drawParticle(x, y, theta, life, ttl, size, hue) {
     ctx.a.save();
     ctx.a.lineCap = 'round';
     ctx.a.lineWidth = 1;
-    ctx.a.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
+    ctx.a.fillStyle   = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
     ctx.a.beginPath();
     ctx.a.translate(xRel, yRel);
     ctx.a.rotate(theta);
     ctx.a.translate(-xRel, -yRel);
-    ctx.a.strokeRect(xRel, yRel, size, size);
+    ctx.a.arc(xRel, yRel, size, 0, 2 * Math.PI, false);
+    ctx.a.fill();
     ctx.a.closePath();
     ctx.a.restore();
 }
