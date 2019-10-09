@@ -1,31 +1,325 @@
-<!DOCTYPE html>
-<html lang="fr" class="no-js">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Total Marketing Digital Solutions - TMDS</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-		<link rel="manifest" href="site.webmanifest" />
-		<link rel="mask-icon" href="safari-pinned-tab.svg" color="#0b4f9e" />
-		<meta name="msapplication-TileColor" content="#0b4f9e" />
-		<meta name="theme-color" content="#ffffff" />
-		<link rel="shortcut icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/base.css" />
-		<link rel="stylesheet" type="text/css" href="css/theme.css" />
-	</head>
-	<body class="wrapper render">
-		<main>
-			<div class="content content--canvas">
-				<h2 class="content__title">
-					<span class="content__helper"></span>
-					<img src="img/logo-horizontal.png" />
-				</h2>
-			</div>
-		</main>
-		<script src="js/noise.min.js"></script>
-		<script src="js/util.js"></script>
-		<script src="js/theme.js"></script>
-	</body>
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+        <title>TMDS - Total Marketing Digital Solutions</title>
+
+        <!-- Favicon icon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#0b4f9e" />
+        <meta name="msapplication-TileColor" content="#0b4f9e" />
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="shortcut icon" href="favicon.ico" />
+
+        <!-- Web fonts/Icons -->
+        <link rel="stylesheet" href="fonts/opensans/stylesheet.css" />
+        <link rel="stylesheet" href="fonts/ionicons/ionicons.min.css" />
+        <link rel="stylesheet" href="fonts/fontawesome/font-awesome.min.css" />
+
+        <!-- Vendor CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="js/lib/swiper.min.css" />
+        <link rel="stylesheet" href="js/lib/jquery.fullpage.min.css" />
+        <link rel="stylesheet" href="js/lib/vegas/vegas.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous" />
+
+        <!-- Main CSS files -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style-gradient.css" />
+    </head>
+
+    <body id="menu" class="body-page">
+        <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Page Loader -->
+        <div class="pageloader" id="pageloader">
+            <div>
+                <div class="icon ion-spin"></div>
+            </div>
+        </div>
+
+        <!-- Start Header -->
+        <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+            <!--
+            <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+                <span class="menu-icon menu-icon-random">
+                <span class="bars">
+                  <span class="bar1"></span>
+                  <span class="bar2"></span>
+                  <span class="bar3"></span>
+                </span>
+              </span>
+            </button>
+            -->
+
+            <a class="navbar-brand" href="#home">
+              <span class="logo">
+                <img class="light-logo" src="img/logo-white.png" alt="TMDS" />
+              </span>
+            </a>
+
+            <!--
+            <div class="all-menu-wrapper" id="navbarMenu">
+                <nav class="navbar-mainmenu">
+                    <ul class="navbar-nav mr-auto mr-auto-my">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html#home">Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="item.html">Item</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="navbar-sidebar ">
+                    <ul class="social">
+                        <li>
+                            <a href="https://www.linkedin.com/company/totalmds/" target="_blank">
+                                <i class="icon fa fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            -->
+        </header>
+        <!-- End Header -->
+
+        <!-- Start Cover -->
+        <div class="page-cover blue">
+            <div class="cover-bg content-canvas"></div>
+            <div id="particles-js" class="cover-bg pos-abs full-size bg-color" data-bgcolor="rgba(2, 3, 10, 0.4)"></div>
+        </div>
+        <!--End Cover -->
+
+        <!-- Start Content -->
+        <main class="page-main page-fullpage main-anim" id="mainpage">
+            <!-- Start Home -->
+            <div class="section section-home fullscreen-md fp-auto-height-responsive main-home" data-section="home">
+                <div class="section-wrapper center-vh dir-col anim">
+                    <div class="section-content reduced text-center">
+                        <div class="row">
+                            <div class="col-12 col-md-12 text-center">
+                                <div class="title-desc">
+                                    <h2 class="display-4 display-title home-img anim-1">
+                                        <img src="img/logo-horizontal.png" />
+                                    </h2>
+                                    <h4 class="anim-2 opacity-75">Total Marketing Digital Solutions</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="section-footer scrolldown">
+                        <a class="down">
+                            <span class="icon"></span>
+                            <span class="txt">A propos</span>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+            <!-- End Home -->
+
+            <!-- Start About -->
+            <div class="section section-description fp-auto-height-responsive about-section" data-section="about">
+                <div class="section-wrapper center-vh dir-col anim">
+                    <div class="section-title text-center">
+                        <h2 class="display-4 display-title anim-2 mb-32">A propos</h2>
+                    </div>
+
+                    <div class="section-content reduced">
+                        <div class="row">
+                            <div class="col-12 col-md-4 text-left">
+                                <div class="title-desc pr-4">
+                                    <h2 class="display-5 anim-2">Total Marketing Digital Solutions</h2>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 text-left mission-border anim-2">
+                                <div class="title-desc anim-2">
+                                    <p>
+                                        Née du savoir-faire d'une startup et du désir de Total de le faire fructifier,
+                                        TMDS conçoit et développe une plateforme technique novatrice basée sur les micro-services,
+                                        permettant de répondre aux besoins métiers de digitalisation des filiales du groupe Total.
+                                    </p>
+                                    <p>
+                                        TMDS est une filiale à 100% de Total Marketing Services.
+                                        Elle concilie la souplesse d'une startup et la puissance d'un grand groupe.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <footer class="section-footer scrolldown">
+                        <a class="down">
+                            <span class="icon"></span>
+                            <span class="txt">Jobs</span>
+                        </a>
+                    </footer>
+                </div>
+            </div>
+            <!-- End About -->
+
+            <!-- Start Jobs -->
+            <div class="section section-twoside fp-auto-height-responsive " data-section="jobs">
+                <div class="section-wrapper center-vh dir-col anim">
+                    <div class="section-title center-vh dir-col text-center">
+                        <h2 class="display-4 display-title anim-2 mb-32">Jobs</h2>
+                    </div>
+
+                    <div class="section-content-slider">
+                        <div class="slider-wrapper carousel-swiper-beta fade-1 carousel-swiper-beta-demo carousel-swiper-tmds">
+                            <div class="slider-container swiper-container">
+                                <ul class="item-list swiper-wrapper">
+                                    <li class="slide-item swiper-slide">
+                                        <div class="item-wrapper">
+                                            <div class="illustr">
+                                                <a href="#">
+                                                    <img src="img/jobs/dev-go.png"
+                                                         alt="Développeur Go" class="img" />
+                                                </a>
+                                            </div>
+                                            <div class="legend pos-abs">
+                                                <div class="text-left">
+                                                    <h5>Développeur Go</h5>
+                                                    <p class="small">Programmation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item swiper-slide">
+                                        <div class="item-wrapper">
+                                            <div class="illustr">
+                                                <a href="#">
+                                                    <img src="img/jobs/dev-fullstack-php.png"
+                                                         alt="Développeur Fullstack PHP" class="img" />
+                                                </a>
+                                            </div>
+                                            <div class="legend pos-abs">
+                                                <div class="text-left">
+                                                    <h5>Développeur Fullstack PHP</h5>
+                                                    <p class="small">Programmation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item swiper-slide">
+                                        <div class="item-wrapper">
+                                            <div class="illustr">
+                                                <a href="#">
+                                                    <img src="img/jobs/dev-frontend.png"
+                                                         alt="Développeur Frontend" class="img" />
+                                                </a>
+                                            </div>
+                                            <div class="legend pos-abs">
+                                                <div class="text-left">
+                                                    <h5>Développeur Frontend</h5>
+                                                    <p class="small">Programmation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="slide-item swiper-slide">
+                                        <div class="item-wrapper">
+                                            <div class="illustr">
+                                                <a href="#">
+                                                    <img src="img/jobs/lead-dev-fullstack.png"
+                                                         alt="Lead Dev Fullstack" class="img" />
+                                                </a>
+                                            </div>
+                                            <div class="legend pos-abs">
+                                                <div class="text-left">
+                                                    <h5>Lead Dev Fullstack</h5>
+                                                    <p class="small">Programmation</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="items-pagination bar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="section-footer scrolldown">
+                    <a class="down">
+                        <span class="icon"></span>
+                        <span class="txt">Testimonials</span>
+                    </a>
+                </footer>
+            </div>
+            <!-- End Projects -->
+
+            <!-- Start Contact -->
+            <div class="section section-contact fp-auto-height-responsive no-slide-arrows " data-section="contact">
+                <div class="section-wrapper center-vh dir-col anim">
+                    <div class="section-title text-center">
+                        <h2 class="display-4 display-title">Contact</h2>
+                        <p>Besoin d'informations ? Contactez nous !</p>
+                    </div>
+
+                    <div class="section-content reduced">
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-7 text-left contact-left">
+                                <div id="map"></div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-5 text-left contact-right">
+                                <img src="img/subscrip-img.png" alt="" />
+                                <div>
+                                    <h4>Adresse</h4>
+                                    <p>54, Rue d'Yvours</p>
+                                    <p>69540 Irigny</p>
+                                </div>
+                                <div>
+                                    <h4>Téléphone</h4>
+                                    <p>+33 (0)4 28 29 91 60</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Contact -->
+
+        </main>
+        <!-- End Content -->
+
+        <!-- Start Footer -->
+        <footer id="site-footer" class="page-footer">
+            <!-- Left content -->
+            <div class="footer-left">
+                <span class="opacity-75"><i class="icon ion-android-call"></i>+33 (0)4 28 29 91 60</span>
+                <span class="opacity-75"><i class="icon fa fa-linkedin"></i><a href="https://www.linkedin.com/company/totalmds/">LinkedIn</a></span>
+            </div>
+
+            <!-- Right content -->
+            <div class="footer-right">
+                <!--<p class="note">© 2019 Developed by TMDS</p>-->
+            </div>
+        </footer>
+        <!-- End Footer  -->
+
+        <!-- Scripts -->
+        <script src="js/lib/jquery-1.12.4.min.js"></script>
+        <script src="js/lib/scrolloverflow.min.js"></script>
+        <script src="js/lib/all.js"></script>
+        <script src="js/lib/particlejs/particles.min.js"></script>
+        <script src="js/lib/particlejs/particles-init.js"></script>
+        <script src="js/lib/ambient/noise.min.js"></script>
+        <script src="js/lib/ambient/util.js"></script>
+        <script src="js/lib/ambient/shift.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+
+        <!-- Main Script files -->
+        <script src="js/custom.js"></script>
+    </body>
 </html>
