@@ -147,7 +147,6 @@ function resize() {
 
 function render() {
     ctx.b.save();
-    ctx.b.filter = 'blur(50px)';
     ctx.b.drawImage(canvas.a, 0, 0);
     ctx.b.restore();
 }

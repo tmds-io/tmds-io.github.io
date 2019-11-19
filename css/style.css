@@ -7014,7 +7014,7 @@ h1, h2, h3, h4 {
 }
 
 .carousel-swiper-tmds .slider-container .legend h5 {
-    line-height: 1 !important;
+    line-height: 1.5 !important;
 }
 .carousel-swiper-tmds .slider-container .legend p {
     font-weight: bold;

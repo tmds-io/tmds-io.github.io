@@ -341,12 +341,11 @@ $(document).on('ready', function () {
     });
 
     // Init map
-    var lat = 45.689720;
+    var lat = 45.689730;
     var lon = 4.826820;
     var map = null;
     windowVar.on('load', function () {
         map = L.map('map').setView([lat, lon], 12);
-        // L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
         L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
             attribution: '© <a href="//osm.org/copyright">OpenStreetMap</a>',
             minZoom: 1,
